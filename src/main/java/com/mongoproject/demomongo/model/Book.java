@@ -16,6 +16,12 @@ public class Book {
 	@Id
 	private int bookId;
 	private String bookName;
+	public Book(int bookId, String bookName, String autherName) {
+		
+		this.bookId = bookId;
+		this.bookName = bookName;
+		this.autherName = autherName;
+	}
 	private String autherName;
 	public int getBookId() {
 		return bookId;
